@@ -9,7 +9,7 @@ import sys, traceback
 ic = EasyIce.initialize(sys.argv)
 
 try:
-    posePrx = ic.stringToProxy("Pose3D:default -h localhost -p 9901")
+    posePrx = ic.stringToProxy("Pose3D:default -h localhost -p 9000")
     posePrx = jderobot.Pose3DPrx.checkedCast(posePrx);
 
     print posePrx.getPose3DData();

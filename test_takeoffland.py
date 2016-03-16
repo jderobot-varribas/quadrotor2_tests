@@ -9,7 +9,7 @@ import sys, traceback, time
 ic = EasyIce.initialize(sys.argv)
 
 try:
-    advPrx = ic.stringToProxy("Extra:default -h localhost -p 9901")
+    advPrx = ic.stringToProxy("Extra:default -h localhost -p 9000")
     advPrx = jderobot.ArDroneExtraPrx.checkedCast(advPrx);
 
     print "Take off!"
